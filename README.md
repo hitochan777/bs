@@ -1,4 +1,4 @@
-# bs
+# bjc
 
 BSON <-> JSON converter
 
@@ -7,23 +7,23 @@ BSON <-> JSON converter
 ## Installation
 
 ```bash
-brew tap hitochan777/bs
-brew install hitochan777/tap/bs
+brew tap hitochan777/bjc
+brew install hitochan777/tap/bjc
 ```
 
 ## Usage
 
 * From BSON to JSON
   ```bash
-  cat /path/to/bson/file | bs -d true
+  cat /path/to/bson/file | bjc -d true
   ```
   
 * From JSON to BSON
   ```bash
-  cat /path/to/json/file | bs
+  cat /path/to/json/file | bjc
   ```
   
-For full documentation, run `bs -h`.
+For full documentation, run `bjc -h`.
 
 ## License
 MIT

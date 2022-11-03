@@ -1,7 +1,9 @@
 [package]
-name = "bs"
+name = "bjc"
 version = "0.3.0"
 edition = "2021"
+description = "BSON <-> JSON decoder and encoder CLI"
+authors = ["Hitoshi Otsuki"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
