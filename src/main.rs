@@ -1,5 +1,5 @@
 use bson::{bson, Document};
-use clap::Parser;
+use clap::{Parser, ArgAction};
 use serde_json::Value;
 use std::fs;
 use std::io::{self, BufRead, BufReader, Write};
@@ -9,14 +9,18 @@ mod bson_json_processor;
 use bson_json_processor::{bson_to_simple_json, json_into_bson};
 
 #[derive(Debug, Parser)]
-#[command(name = "bs")]
-#[command(about = "bson decoder and encoder CLI", long_about = None)]
+#[clap(
+    name = env!("CARGO_PKG_NAME"),
+    version = env!("CARGO_PKG_VERSION"),
+    author = env!("CARGO_PKG_AUTHORS"),
+    about = env!("CARGO_PKG_DESCRIPTION"),
+)]
 struct Cli {
     #[clap(short, long)]
     path: Option<String>,
-    #[clap(short, long)]
+    #[clap(short, long, action = ArgAction::SetTrue)]
     decode: Option<bool>,
-    #[clap(short, long)]
+    #[clap(short, long, action = ArgAction::SetTrue)]
     verbose: Option<bool>,
 }
 
