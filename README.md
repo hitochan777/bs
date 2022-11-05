@@ -15,7 +15,7 @@ brew install hitochan777/tap/bjc
 
 * From BSON to JSON
   ```bash
-  cat /path/to/bson/file | bjc -d true
+  cat /path/to/bson/file | bjc -d
   ```
   
 * From JSON to BSON
