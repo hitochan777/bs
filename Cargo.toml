@@ -10,5 +10,5 @@ authors = ["Hitoshi Otsuki"]
 [dependencies]
 bson = "2.4.0"
 clap = { version = "4.0.29", features = ["derive"] }
-serde = { version = "1.0.147", features = ["derive"] }
+serde = { version = "1.0.151", features = ["derive"] }
 serde_json = { version = "1.0.90" }
